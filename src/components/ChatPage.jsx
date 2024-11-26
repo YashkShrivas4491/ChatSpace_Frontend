@@ -14,7 +14,7 @@ function ChatPage() {
   const [roomName, setRoomName] = useState("");
   const [username, setUsername] = useState("");
 
-  const socket = useMemo(() => io("https://chatspacebackend-production.up.railway.app"), []);
+  const socket = useMemo(() => io("https://chatspace-backend-cwyt.onrender.com"),[]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
